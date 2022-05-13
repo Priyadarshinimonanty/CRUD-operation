@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operation</title>
+</head>
+
+<body>
+
+    <h1>
+        <center>Registartion Form</center>
+    </h1>
+    <hr>
+    <div class="regdform">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <br>
+            <div>
+                <label>Email Id</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label>Father's name</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <br>
+            <div>
+                <label>Mother's name</label>
+                <input type="text" name="mname" id="mname">
+            </div>
+            <br>
+            <div>
+                <label>City</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <br>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+    <br />
+    <div class="regdtable">
+        <table class="list" id="tableList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email Id</th>
+                    <th>Father's name</th>
+                    <th>Mother's name</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td> </td>
+            </tbody>
+        </table>
+    </div>
+    <script src="crudoperation.js"></script>
+
+
+
+</body>
+
+</html>
